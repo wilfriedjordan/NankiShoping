@@ -1,0 +1,150 @@
+<section>
+  <div class="top-page h-screen mt-40 bg-no-repeat bg-cover bg-center relative " style="background-image: url(../../../../assets/Image/slider_1.jpg);">
+    <div class="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 leading-4 mx-20 "  >
+      <p class="leading-10">Sping / Summer Collection 2023</p>
+      <div>
+        <h1 class="text-6xl  text-black opacity-80 font-medium "> Get up to 30% off New Arrivals</h1>
+      </div>
+      <button class="btn bg-red-400 text-white rounded-md p-4  px-8 cursor-pointer mt-8">Shop Now</button>
+    </div>
+  </div>
+</section>
+<section class="h-96">
+  <div class="flex mt-10 mx-40 justify-between">
+    <div class="card">
+      <img src="../../../../assets/Image/banner_1.jpg" alt="image">
+      <a href="" class="liens">Women's</a>
+    </div>
+    <div class="card">
+      <img src="../../../../assets/Image/banner_2.jpg" alt="image">
+      <a href="" class="liens">Accessories's</a>
+    </div>
+    <div class="card">
+      <img src="../../../../assets/Image/banner_3.jpg" alt="image">
+      <a href="" class="liens" >Men's</a>
+    </div>
+  </div>
+</section>
+<section class="arrivage h-auto  relative">
+  <div>
+    <div class="text-center mb-16">
+      <h1 class="section-title text-5xl font-bold opacity-70 relative ">New Arrivals</h1>
+    </div>
+    <div class=" flex items-center justify-around  h-9 w-2/5 border-solid border-2  absolute top-44 left-1/2 transfom -translate-x-1/2 -translate-y-1/2  ">
+      <div class=" filter_All ongles uppercase cursor-pointer text-sm active h-full w-20 flex justify-center items-center">All</div>
+      <div class=" filter_womens ongles uppercase cursor-pointer text-sm  w-20 h-full flex items-center justify-center  flex-grow">Women's</div>
+      <div class=" filter_accesories ongles uppercase cursor-pointer text-sm w-20  h-full flex items-center justify-center flex-grow">Accessories</div>
+      <div class=" filter_mens ongles uppercase cursor-pointer text-sm w-20  h-full flex items-center justify-center flex-grow">Men's</div>
+    </div>
+  </div>
+  <div class="container h-auto mt-56 mx-28 grid grid-cols-5 gap-4 pr-11 hover:transition-shadow">
+    <app-article *ngFor="let article of articles" [article]="article" ></app-article>
+  </div>
+</section>
+
+<section class="w-full bg-gray-200 h-auto mt-20 ">
+  <div  class=" flex justify-center items-center h-full gap-5">
+    <div>
+      <img src="../../../../assets/Image/article/deal_ofthe_week.png" alt="imgae">
+    </div>
+    <div class=" mt-5 relative">
+      <h1 class="section-title text-4xl font-bold opacity-70 relative mb-16 text-center" >Deal Of The Week</h1>
+      <h3 class="text-center text-2xl opacity-50  ">Fin de promotion</h3>
+      <div class="h-96 flex items-center justify-center gap-8  pb-20">
+        <div class=" bg-white h-32 w-32 rounded-full flex text-center justify-center items-center flex-col">
+          <p class="jour text-red-500 font-bold text-5xl"></p>
+          <p class="opacity-55">Day</p>
+        </div>
+        <div class=" bg-white h-32 w-32 rounded-full flex text-center justify-center items-center flex-col">
+          <p class="heure text-red-500 font-bold text-5xl"></p>
+          <p class="opacity-55">Hours</p>
+        </div>
+        <div class=" bg-white h-32 w-32 rounded-full flex text-center justify-center items-center flex-col">
+          <p class="minute text-red-500 font-bold text-5xl"></p>
+          <p class="opacity-55">Mins</p>
+        </div>
+        <div class=" bg-white h-32 w-32 rounded-full flex text-center justify-center items-center flex-col">
+          <p class="seconde text-red-500 font-bold text-5xl"></p>
+          <p class="opacity-55">Sec</p>
+        </div>
+      </div>
+      <a href="" class="text-center block mb-16 text-white bg-zinc-950 w-40 rounded-md h-12 pt-3 text-1xl absolute bottom-0 transform left-1/2 -translate-x-1/2">Shop Now</a>
+    </div>
+  </div>
+</section>
+<section class="h-auto mt-28 mx-28 relative">
+  <div class="h-screen">
+    <h1 class="section-title text-4xl font-bold opacity-70 relative mb-16 text-center"> Best Articles</h1>
+    <div class="wrapper  mt-28 mx-6  carousel  ">
+      <p class="absolute left-7 direction w-10 h-10 text-center  pt-3 mb-8 bg-red-600 rounded-full bg-opacity-75  text-white" id="direction_left"><i class="fa-solid fa-chevron-left "></i></p>
+      <app-article *ngFor="let article of aticleSlider" [article]="article" ></app-article>
+      <p class="absolute direction bg-opacity-75 right-0 pt-3 mb-8 bg-red-600 rounded-full w-10 h-10 text-center text-white" id="direction_right"><i class="fa-solid fa-chevron-right "></i></p>
+    </div>
+  </div>
+</section>
+<section class="w-full h-auto   flex justify-center items-center gap-1">
+  <div class=" bg-gray-200 flex items-center w-72 gap-4 px-5 h-24">
+    <i class="fa-solid fa-truck text-ss text-red-500"></i>
+    <div>   
+      <h2 class="font-bold text-xss uppercase opacity-85">Free Shipping</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div class=" bg-gray-200 flex items-center w-72 gap-4 px-5 h-24">
+    <i class="fa-regular fa-money-bill-1 text-ss text-red-500"></i>
+    <div>
+      <h2 class="font-bold text-xss uppercase opacity-85">cach on delivery</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div class=" bg-gray-200 flex items-center w-72 gap-4 px-5 h-24">
+    <i class="fa-solid fa-arrows-rotate text-ss text-red-500"></i>
+    <div>
+      <h2 class="font-bold text-xss uppercase opacity-85">45 days return</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div class=" bg-gray-200 flex items-center w-72 gap-4 px-5 h-24">
+    <i class="fa-regular fa-clock text-ss text-red-500"></i>
+    <div>
+      <h2 class="font-bold text-xss uppercase opacity-85">Opening all week</h2>
+      <p>8AM - 9PM</p>
+    </div>
+  </div>
+</section>
+<section class="h-auto w-full mt-20 mb-10">
+  <h1 class="section-title text-4xl font-bold opacity-70 relative mb-16 text-center">Latest Blogs</h1>
+  <div class=" flex justify-center h-full gap-5">
+    <div style="  background-image: url('../../../../assets/Image/article/blog_1.jpg');" class=" relative h-64 bg-cover bg-no-repeat w-80 parent">
+      <div class="h-52 w-72 bg-gray-100 opacity-0 rounded-md absolute top-6 left-4 pt-8 px-4 text-center transition-all duration-500 ease-in-out fils">
+        <h1 class="text-2xl font-bold">Here are the trends i see coming this fall</h1>
+        <p>By admin i dec 30, 2023</p>
+        <a href="" class="underline text-red-500 mt-6 block">Red more</a>
+      </div>
+  </div>
+    <div style=" background-image: url('../../../../assets/Image/article/blog_2.jpg');" class=" relative h-64  bg-cover bg-no-repeat w-80 parent">
+      <div class="h-52 w-72 bg-gray-100 opacity-0 rounded-md absolute top-6 left-4 pt-8 px-4 text-center transition-all duration-500 ease-in-out fils">
+        <h1 class="text-2xl font-bold">Here are the trends i see coming this fall</h1>
+        <p>By admin i dec 30, 2023</p>
+        <a href="" class="underline text-red-500 mt-6 block">Red more</a>
+      </div>
+    </div>
+    <div style=" background-image: url('../../../../assets/Image/article/blog_3.jpg');" class=" relative h-64  bg-cover bg-no-repeat w-80 parent">
+      <div class="h-52 w-72 bg-gray-100 opacity-0 rounded-md absolute top-6 left-4  pt-8 px-4 text-center transition-all duration-500 ease-in-out fils">
+        <h1  class="text-2xl font-bold">Here are the trends i see coming this fall</h1>
+        <p>By admin i dec 30, 2023</p>
+        <a href="" class="underline text-red-500 mt-6 block">Red more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w-full flex items-center justify-evenly bg-gray-100 my-12 h-32 ">
+  <div class=" ">
+    <h1 class="text-4xl font-jost">Newsletter</h1>
+    <p class="opacity-65">Subcribe to our newsletter and get 20% of you first purchase</p>
+  </div>
+  <form class="flex" #form = 'ngForm' (ngSubmit)="ngSubmit(form)" >
+    <input [(ngModel)]="userEmail" class="h-11 w-72 pl-6 text-xs cursor-pointer text-center" type="text" name="userEmail" placeholder="your email" required>
+    <button class="bg-red-500 w-40 text-white text-xs" type="submit">Subscribe</button>
+  </form>
+</section>

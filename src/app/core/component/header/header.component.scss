@@ -1,0 +1,23 @@
+
+
+.familly-jost{
+  font-family: 'Montserrat', sans-serif;
+}
+.sous-list{
+  visibility: hidden;
+  transition: all .2s ease;
+}
+li.list-items:hover > .sous-list{
+  visibility: visible;
+  transform: translateX(-10px);
+}
+.linkActive{
+  @apply text-red-300
+}
+.sous-list2{
+  visibility: hidden;
+  transition: all .3s ease;
+}
+a.list-item:hover > .sous-list2{
+  visibility: visible;
+}

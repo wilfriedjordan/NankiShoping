@@ -1,0 +1,122 @@
+<header class="header m-0 p-0 z-50 fixed top-0 w-full">
+  <div class="top_header h-12 bg-gray-800 text-white w-full flex items-center justify-around">
+    <div>
+      <p class=" opacity-75 familly-jost text-ms">Free Shopping All U.S and Cameroun</p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-4 familly-jost text-gray-400 text-mss">
+        <li class="border-r-2 pr-5 ">UDS</li>
+        <li class="border-r-2 pr-5 cursor-pointer list-items ">English
+          <i class="fa-solid fa-angle-down"></i>
+          <ul class=" sous-list fixed text-black bg-white  p-3 top-12 left-84 ">
+            <li class="w-full p-2" >
+              <a href="">
+                French
+              </a>
+            </li>
+            <li class="w-full p-2" >
+              <a href="">
+                Chinois
+              </a>
+            </li>
+            <li class="w-full p-2" >
+              <a href="">
+                Espagnol
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" list-items cursor-pointer hover:opacity-100">My Account
+          <i class="fa-solid fa-angle-down"></i>
+          <ul class=" sous-list fixed text-black bg-white  p-3 top-12 z-50 font-bold bg-opacity-100 ">
+            <li class="border-b-2 pr-8">
+              <a class="text-green-900" routerLink="login">
+                Login
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </a>
+            </li>
+            <li class="sous-list-items mt-2">
+              <a routerLink="register" class="text-red-700 z-50"  >
+                Register
+                <i class="fa-solid fa-user-plus text-red-800"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom_header bg-white flex justify-around items-center h-28">
+    <div class="logo">
+      <h1 class="text-2xl font-bold" >Nanki<span class="text-red-600 font-bold">Shopping</span></h1>
+    </div>
+    <div class="navigation">
+      <nav class="navbar flex items-center gap-5">
+        <form class="relative">
+          <input type="text" placeholder="Search" class="rounded-lg text-center z-1">
+          <i class="fa-solid fa-magnifying-glass hover:scale-105 cursor-pointer hover:opacity-45"></i>
+        </form>
+        <ul class="flex items-center gap-5 ">
+          <li class="list-item"><a routerLink="" routerLinkActive="linkActive"  class="font-sm text-sm hover:opacity-40">HOME</a></li>
+          <li class="list-item"><a class="font-sm text-sm cursor-pointer list-item "> Shop
+            <div class="w-full fixed bg-white left-0 mt-6 h-70 px-5 flex sous-list2">
+              <div class="w-72 px-9 leading-9 border border-l-0 ">
+                <h1 class="text-mss text-center">Women's Collection</h1>
+                <hr class="w-full m-4">
+                <p class="opacity-50 text-center">Dresses</p>
+                <p class="opacity-50 text-center" >Blouses & Shirts</p>
+                <p class="opacity-50 text-center" >T-shirts</p>
+                <p class="opacity-50 text-center" >Rompers</p>
+                <p class="opacity-50 text-center" >Bras & Panties</p>
+              </div>
+              <div class="w-72 px-9 leading-9 border border-l-0">
+                <h1 class="text-mss text-center">Men's Collection</h1>
+                <hr  class="w-full m-4">
+                <p class="opacity-50 text-center" >T-shirts</p>
+                <p class="opacity-50 text-center" >Polo</p>
+                <p class="opacity-50 text-center" >Shirts</p>
+                <p class="opacity-50 text-center" >Jackets</p>
+                <p class="opacity-50 text-center" >Trench</p>
+              </div>
+              <div class="w-72 px-9 leading-9 border border-l-0 border-r-0">
+                <h1 class="text-mss text-center">Kid's Collection</h1>
+                <hr  class="w-full m-4">
+                <p class="opacity-50 text-center" >Dresses</p>
+                <p class="opacity-50 text-center" >Polo</p>
+                <p class="opacity-50 text-center" >Shirts</p>
+                <p class="opacity-50 text-center" >Jackets</p>
+                <p class="opacity-50 text-center" >Trench</p>
+              </div>
+              <div class="flex justify-center items-center px-4 ">
+                <a routerLink="create" class="bg-green-500 block w-44 p-4 rounded text-center text-white text-xss">New Article </a>
+              </div>
+              <div>
+                <img src="../../../../assets/Image/banner_2.jpg" alt="image" class="h-full">
+              </div>
+
+            </div>
+
+          </a></li>
+          <li class="list-item"><a href="" routerLinkActive="linkActive" class="font-sm text-sm hover:opacity-40">Promotion</a></li>
+          <li><a class="font-sm text-sm  relative list-item cursor-pointer text-black"> Pages
+            <i class="fa-solid fa-angle-down hover:scale-105 cursor-pointer "></i>
+            <ul class=" sous-list2 fixed bg-white text-black w-36 right-80 p-6 text-center text-ms leading-7 " >
+              <li class=""><a routerLink="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a routerLink="Promotion" >Promotion</a></li>
+              <li><a routerLink="blog">Blog</a></li>
+              <li><a routerLink="contact">Contact</a></li>
+            </ul>
+          </a></li>
+          <li><a routerLink="blog" routerLinkActive="linkActive" class="font-sm text-sm hover:opacity-40">Blog</a></li>
+          <li><a routerLink="contact" routerLinkActive="linkActive" class="font-sm text-sm hover:opacity-40">Contact</a></li>
+        </ul>
+        <i class="fa-regular fa-user cursor-pointer"></i>
+        <div class="h-10 w-10 rounded-full bg-gray-300 p-2 text-center relative cursor-pointer ">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="h-6 w-6 rounded-full bg-red-500 text-white font-sm text-center absolute -top-2 -right-2">3</p>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

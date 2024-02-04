@@ -1,0 +1,130 @@
+.card{
+  border-radius: 15px;
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0, 5px, 50px ,rgba(0,0,0,0.85);
+}
+.card1{
+  background-image: url('../../../../assets/Image/blog/1.jpg');
+}
+.card2{
+  background-image: url('../../../../assets/Image/blog/3.jpg');
+}
+.card3{
+  background-image: url('../../../../assets/Image/blog/3.jpg');
+}
+.card4{
+  background-image: url('../../../../assets/Image/blog/4.jpg');
+}
+.card5{
+  background-image: url('../../../../assets/Image/blog/5.jpg');
+}
+.card6{
+  background-image: url('../../../../assets/Image/blog/6.jpg');
+}
+.card7{
+  background-image: url('../../../../assets/Image/blog/7.jpg');
+}
+.card8{
+  background-image: url('../../../../assets/Image/blog/8.jpg');
+}
+.card9{
+  background-image: url('../../../../assets/Image/blog/9.jpg');
+}
+.card10{
+  background-image: url('../../../../assets/Image/blog/9.jpg');
+}
+.card::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,92);
+}
+.card .img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img span{
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: left;
+  transition: all 0.5s;
+}
+.card1 .img span{
+  background-image: url('../../../../assets/Image/blog/1.jpg');
+}
+.card2 .img span{
+  background-image: url('../../../../assets/Image/blog/3.jpg');
+}
+.card3 .img span{
+  background-image: url('../../../../assets/Image/blog/4.jpg');
+}
+.card4 .img span{
+  background-image: url('../../../../assets/Image/blog/5.jpg');
+}
+.card5 .img span{
+  background-image: url('../../../../assets/Image/blog/2.jpg');
+}
+.card6 .img span{
+  background-image: url('../../../../assets/Image/blog/6.jpg');
+}
+.card7 .img span{
+  background-image: url('../../../../assets/Image/blog/7.jpg');
+}
+.card8 .img span{
+  background-image: url('../../../../assets/Image/blog/8.jpg');
+}
+.card9 .img span{
+  background-image: url('../../../../assets/Image/blog/9.jpg');
+}
+.card10 .img span{
+  background-image: url('../../../../assets/Image/blog/9.jpg');
+}
+.card .img span:nth-child(1){
+  transition-delay: 0s;
+  background-position: 0;
+}
+.card .img span:nth-child(2){
+  transition-delay: 0.1s;
+  background-position: 33.33%;
+}
+.card .img span:nth-child(3){
+  transition-delay: 0.2s;
+  background-position: 66.66%;
+}
+.card .img span:nth-child(4){
+  transition-delay: 0.3s;
+  background-position: 100%;
+}
+.card:hover .img > span{
+  transform: translateY(-100%);
+}
+
+.conteneur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white ;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  transform: translateY(100%);
+  h2{
+    font-size: 23px;
+  }
+}
+.card:hover .conteneur{
+  transform: translateY(0%);
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}

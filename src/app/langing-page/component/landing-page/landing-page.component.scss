@@ -1,0 +1,53 @@
+.font-jost{
+  font-family: 'jost', arial, helvetica, sans-serif;
+}
+.card{
+  @apply relative
+}
+.liens{
+  @apply absolute top-1/2 left-1/2 block bg-white text-3xl transform -translate-x-1/2 -translate-y-1/2 py-2 px-8 rounded-lg
+}
+.liens:hover{
+  @apply opacity-75 bg-red-400 text-white font-bold
+}
+.liens:focus{
+  @apply outline-none
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+}
+.section-title::before{
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 70px;
+  background-color: red;
+  top: 70px;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+.active{
+  @apply bg-red-500 text-white font-bold 
+}
+.ongles:not(:nth-child(4)){
+  @apply border border-r-2 border-b-0 border-t-0
+}
+.transition{
+  @apply transition-shadow 
+}
+.carousel{
+  overflow: hidden;
+  display: grid;
+  scroll-behavior: smooth;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% /5 ) - 3px);
+}
+
+.direction{
+  @apply text-sm cursor-pointer  
+}
+.parent:hover .fils{
+  @apply opacity-90
+}

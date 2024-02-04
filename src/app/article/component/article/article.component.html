@@ -1,0 +1,17 @@
+<div class="w-60 min-h-96 h-full  mt-10 mx-6 bg-gray-100 relative hover:shadow-2xl hover:border-2 transition hover:transition-colors carousel">
+  <div class="w-full">
+    <img [src]="article.image" [alt]="article.title" class="w-full">
+  </div>
+  <div class="w-full flex-wrap flex-shrink text-center p-3">
+    <h1 class="text-2xl h-1/2">{{article.title | titlecase }}</h1>
+    <h2 class="text-sm">{{article.description}}</h2>
+    <div class="flex items-center justify-center gap-4">
+      <p class="text-red-600 font-bold font-jost">{{article.price | currency}}</p>
+      <p *ngIf="article.pricePromotion" class="line-through opacity-55"><span>{{article.pricePromotion | currency}}</span></p>
+    </div>
+    <p *ngIf="article.poucentageReduction" class="bg-yellow-300 w-16 h-8 relative left-1/2 transform -translate-x-1/2 my-2 text-center pt-1">{{article.poucentageReduction | percent}}</p>
+    <p *ngIf="article.status" [ngClass]="{bg_gren:article.status == 'New'}"  class=" status absolute top-4 right-8 text-center pt-1 w-16 h-10 bg-red-400 text-white font-bold ">{{article.status}}</p>
+    <p [ngStyle]="{color:'rgb(0,'+article.like+',0)'}" class="absolute top-4 left-4"><i class="fa-regular fa-heart cursor-pointer active:text-red-500 " (click)="Addlike()"></i>{{article.like}}</p>
+  </div>
+  <button (click)="viewArticle()" class="w-full block bg-red-500 text-white text-center py-2 absolute bottom-0 invisible transition-all 2s transform ">Vew More</button>
+</div>
